@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BezierBall">
+        <attr name="ballRadius" format="dimension" />
+        <attr name="ballNumber" format="integer" />
+        <attr name="ballColor" format="color" />
+        <attr name="currentSelected" format="integer" />
+        <attr name="showBottomCircle" format="boolean" /><!--是否绘制底下的圆-->
+        <attr name="bottomCircleFill" format="color" /><!--底下圆的默认颜色-->
+        <attr name="bottomCircleStroke" format="color" /><!--底下圆的描边颜色-->
+        <attr name="bottomCircleStrokeWidth" format="dimension" /><!--描边尺寸-->
+        <attr name="circleTouchPadding" format="dimension" /><!--加个触摸范围padding更好触摸-->
+        <attr name="ExtensionRatio" format="float" /><!--拉伸比-->
+    </declare-styleable>
+
+</resources>
