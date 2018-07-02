@@ -10,8 +10,7 @@
 			android:layout_height="120dp"
 			android:padding="10dp" />
 ![image](https://github.com/bouquet12138/pictureLibrary/blob/master/ballRadiusBig.png)
-
-
+<br>
 		* ballRadius 修改球的半径 默认为20dp
 		<com.example.bezierball.custom_view.BezierBall
 			android:layout_width="wrap_content"
@@ -19,6 +18,7 @@
 			app:ballRadius="10dp"
 			android:padding="10dp" />
 ![image](https://github.com/bouquet12138/pictureLibrary/blob/master/ballNumber.png)
+<br>
 		* ballNumber 修改球的数目 默认为1个
 		<com.example.bezierball.custom_view.BezierBall
 			android:layout_width="match_parent"
@@ -30,6 +30,7 @@
 		* ballColor 修改球的颜色
 		当然也可以添加一组颜色 java代码 对象.setColorList(colorList);//设置一下颜色列表 colorList是integer集合 格式0xaarrggbb
 ![image](https://github.com/bouquet12138/pictureLibrary/blob/master/ballColor.png)
+<br>
 		* currentSelected 当前选择的view
 		<com.example.bezierball.custom_view.BezierBall
 			android:layout_width="match_parent"
