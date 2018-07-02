@@ -93,12 +93,14 @@ public class BezierBall extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        for (int i = 0; i < mBallProperty.getBallNumber() && mBallProperty.getBallNumber() != 1; i++) {
-            float radius = mBallProperty.getBallRadius();
-            float realWidth = mViewWidth - 2 * radius - mPaddingLeft - mPaddingRight;//圆点坐标能移动的范围
-            int x = (int) (radius + mPaddingLeft + realWidth / (mBallProperty.getBallNumber() - 1) * i);
-            canvas.drawCircle(x, mViewY, radius - mBallProperty.getBottomCircleStrokeWidth(), mBottomCirclePaint);//绘制填充
-            canvas.drawCircle(x, mViewY, radius - mBallProperty.getBottomCircleStrokeWidth(), mBottomStrokePaint);//绘制描边
+        if (mBallProperty.isShowBottomCircle()) {
+            for (int i = 0; i < mBallProperty.getBallNumber() && mBallProperty.getBallNumber() != 1; i++) {
+                float radius = mBallProperty.getBallRadius();
+                float realWidth = mViewWidth - 2 * radius - mPaddingLeft - mPaddingRight;//圆点坐标能移动的范围
+                int x = (int) (radius + mPaddingLeft + realWidth / (mBallProperty.getBallNumber() - 1) * i);
+                canvas.drawCircle(x, mViewY, radius - mBallProperty.getBottomCircleStrokeWidth(), mBottomCirclePaint);//绘制填充
+                canvas.drawCircle(x, mViewY, radius - mBallProperty.getBottomCircleStrokeWidth(), mBottomStrokePaint);//绘制描边
+            }
         }
 
         mPath.reset();//重置一下
@@ -288,7 +290,7 @@ public class BezierBall extends View {
         int widthSize = MeasureSpec.getSize(widthMeasureSpec); // 获取高-测量规则的模式和大小
         int heightMode = MeasureSpec.getMode(heightMeasureSpec);
         int heightSize = MeasureSpec.getSize(heightMeasureSpec); // 设置wrap_content的默认宽 / 高值 // 默认宽/高的设定并无固定依据,根据需要灵活设置 // 类似TextView,ImageView等针对wrap_content均在onMeasure()对设置默认宽 / 高值有特殊处理,具体读者可以自行查看
-        int mWidth = DensityUtil.dipToPx(getContext(), 640);
+        int mWidth = DensityUtil.dipToPx(getContext(), 300);
         int mHeight = DensityUtil.dipToPx(getContext(), 40); // 当模式是AT_MOST（即wrap_content）时设置默认值
         if (widthMode == MeasureSpec.AT_MOST && heightMode == MeasureSpec.AT_MOST) {
             setMeasuredDimension(mWidth, mHeight); // 宽 / 高任意一个模式为AT_MOST（即wrap_content）时，都设置默认值

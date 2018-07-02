@@ -11,7 +11,7 @@
         <attr name="bottomCircleStroke" format="color" /><!--底下圆的描边颜色-->
         <attr name="bottomCircleStrokeWidth" format="dimension" /><!--描边尺寸-->
         <attr name="circleTouchPadding" format="dimension" /><!--加个触摸范围padding更好触摸-->
-        <attr name="ExtensionRatio" format="float" /><!--拉伸比-->
+        <attr name="extensionRatio" format="float" /><!--拉伸比-->
     </declare-styleable>
 
 </resources>

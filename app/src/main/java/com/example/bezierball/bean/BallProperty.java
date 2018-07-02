@@ -37,11 +37,11 @@ public class BallProperty {
 
         mShowBottomCircle = typedArray.getBoolean(R.styleable.BezierBall_showBottomCircle, true);
         mBottomCircleFill = typedArray.getColor(R.styleable.BezierBall_bottomCircleFill, 0x88ffffff);
-        mBottomCircleStroke = typedArray.getColor(R.styleable.BezierBall_bottomCircleStroke, 0xffeeeeee);
+        mBottomCircleStroke = typedArray.getColor(R.styleable.BezierBall_bottomCircleStroke, 0xffcccccc);
         mBottomCircleStrokeWidth = typedArray.getDimension(R.styleable.BezierBall_bottomCircleStrokeWidth, DensityUtil.dipToPx(context, 1));
 
         mCircleTouchPadding = typedArray.getDimension(R.styleable.BezierBall_circleTouchPadding, DensityUtil.dipToPx(context, 10));
-        mExtensionRatio = typedArray.getFloat(R.styleable.BezierBall_ExtensionRatio, 1);
+        mExtensionRatio = typedArray.getFloat(R.styleable.BezierBall_extensionRatio, 1);
 
         mColorList = new ArrayList<>();//存放小球颜色的集合
 
