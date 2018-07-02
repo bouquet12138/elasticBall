@@ -40,11 +40,16 @@
 			app:ballColor="#8ca9ff"
 			android:padding="10dp" />
 		java 代码设置方法 对象setCurrentSelected(position);//position integer
-![image](https://github.com/bouquet12138/pictureLibrary/blob/master/ballCurrentSelected.png)
+![image](https://github.com/bouquet12138/pictureLibrary/blob/master/ballCurrentSelected.png)<br>
+		
 		* showBottomCircle 是否展示底下的圆 很简单就不演示了
+		
 		* bottomCircleFill 底部圆的填充色
+		
 		* bottomCircleStroke 底部圆的描边颜色
+		
 		* bottomCircleStrokeWidth 底部圆描边宽
+		
 		* circleTouchPadding 为了用户更好的触摸 是为了扩大单个item用户触摸范围的 默认为10dp
 		
 		* extensionRatio 拉伸到最长的时候的拉伸倍率 建议 [0,1]
