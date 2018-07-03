@@ -30,7 +30,8 @@
 			android:padding="10dp" />
 		java 代码设置方法 对象.setBallNumber(3);
 		* ballColor 修改球的颜色
-		当然也可以添加一组颜色 java代码 对象.setColorList(colorList);//设置一下颜色列表 colorList是integer集合 格式0xaarrggbb
+		当然也可以添加一组颜色 java代码 对象.setColorList(colorList);
+		//设置一下颜色列表 colorList是integer集合 格式0xaarrggbb
 ![image](https://github.com/bouquet12138/pictureLibrary/blob/master/ballColor.png)
 <br>
 		
