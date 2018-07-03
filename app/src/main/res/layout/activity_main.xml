@@ -17,7 +17,7 @@
 
     <com.example.bezierball.custom_view.BezierBall
         android:id="@+id/indicatorBall"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:layout_gravity="center_horizontal"
@@ -25,6 +25,7 @@
         app:bottomCircleStroke="#cfcfcf"
         app:bottomCircleFill="#fafafa"
         app:extensionRatio="1"
+        app:ballRadius="10dp"
         />
 
 </LinearLayout>
